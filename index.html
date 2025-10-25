@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Colorful Calendar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calendar" id="calendarRoot" aria-live="polite">
+    <div class="header">
+      <div class="month-block">
+        <div class="title">
+          <div class="month" id="monthLabel">March</div>
+          <div class="year" id="yearLabel">2025</div>
+        </div>
+        <div class="legend" aria-hidden="true" style="margin-left:16px">
+          <div class="item"><span class="dot work"></span> Work</div>
+          <div class="item"><span class="dot event"></span> Event</div>
+          <div class="item"><span class="dot holiday"></span> Holiday</div>
+          <div class="item"><span class="dot reminder"></span> Reminder</div>
+        </div>
+      </div>
+
+      <div class="nav" role="toolbar" aria-label="Calendar navigation">
+        <button class="btn" id="prevBtn" title="Previous month">◀ Prev</button>
+        <button class="btn" id="todayBtn" title="Today">Today</button>
+        <button class="btn" id="nextBtn" title="Next month">Next ▶</button>
+      </div>
+    </div>
+
+    <div class="weekdays" role="row">
+      <div class="wd">Sun</div>
+      <div class="wd">Mon</div>
+      <div class="wd">Tue</div>
+      <div class="wd">Wed</div>
+      <div class="wd">Thu</div>
+      <div class="wd">Fri</div>
+      <div class="wd">Sat</div>
+    </div>
+
+    <div class="grid" id="calendarGrid" role="grid" aria-label="Month calendar"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
